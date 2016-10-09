@@ -1,18 +1,54 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>dazhilang</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <img style="position:fixed;" src="images/bfwz.jpg" height="100%" width="100%"/>
-    <section class="main-content">
-      <p>这里现在什么都没有--.</p>
-    </section>
-  </body>
+<!DOCTYPE html> 
+ <html lang="en-us"> 
+      <head> 
+     <meta charset="UTF-8"> 
+     <title>网页Loading</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1"> 
+     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen"> 
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> 
+     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen"> 
+     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen"> 
+   </head>
+
+<body  onLoad="location.href = url;" style='overflow:hidden;overflow-y:hidden'>
+<script language="JavaScript">
+var url = 'http://www.dazhilang.win';
+</script>
+  
+<div align=center>
+<font class=fontbig>页面加载中......
+<style><!--.proccess{border:1px solid;width:8;height:8;background:#ffffff;margin:3}--></style>
+<div align="center">
+<form method=post name=proccess>
+<script language=javascript>
+for(i=0;i<30;i++)document.write("<input class=proccess>")
+</script>
+</form>
+  </div>
+
+
+<div align="center">
+  
+<script language=JavaScript>var p=0,j=0;
+var c=new Array("lightskyblue","white")
+setInterval('proccess();',100)
+function proccess(){
+document.forms.proccess.elements[p].style.background=c[j];
+p+=1;
+if(p==30){p=0;j=1-j;}}
+--></script>
+</div>
+</div>
+<div align="center">
+<script>
+<!--
+if (document.layers)
+document.write('<Layer src="' + url + ' " VISIBILITY="hide"> </Layer>');
+else if (document.all || document.getElementById)
+document.write('<iframe src="' + url + '" style="visibility: hidden;"></iframe>');
+else location.href = url;
+//-->
+</script>
+</div>
+
 </html>
