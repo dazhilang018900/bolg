@@ -1,36 +1,76 @@
 ﻿<!DOCTYPE html> 
- <html lang="en-us"> 
-   <head> 
-     <meta charset="UTF-8"> 
-     <title>dazhilang</title> 
-     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen"> 
-     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> 
-     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen"> 
-     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen"> 
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>dazhilang</title>
     <style>
-    .backg{
-    background: url(images/bfwz.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
+        ul{
+            padding:0;margin:0;
+        }
+        li{
+            list-style-type:square;
+        }
+        .backg {
+            background: url(images/bfwz.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        .page_head{
+
+        }
+
+        .page_content{
+            margin:10px;
+            font-family:'Microsoft Himalaya';
+            font-size:50px;
+        }
+
+        .page_foot{
+            margin:0;
+            font-family:'Microsoft Himalaya';
+            font-size:28px;
+            position:absolute;
+            bottom:0px;
+            right:25px;
+        }
+
     </style>
-   </head> 
-   <body class="backg"> 
-       <audio autoplay="" loop=""><source src="BackgroundMusic/TheDawn.mp3"></audio>
-           <section class="main-content">
+</head>
 
-               <div class="top">
-                   <p></p>
-               </div>
 
-               <div class="first">
+<body class="backg">
 
-               </div>
+    <!--网页头部-->
+    <header class="page_head">
+        
+    </header>
 
-           </section>
+    <!--背景音乐-->
+    <audio autoplay="" loop="">
+        <source src="BackgroundMusic/TheDawn.mp3"></audio>
 
-</body> 
- </html> 
+
+    <!--网页主要内容-->
+    <div class="page_content">
+
+        <ul>
+            <li>
+                <br /><br /><br />
+                <a id="Dev" onclick="onclick" href="htmlpage/dev.html">Dev<br /></a>
+                <a id="Rev" onclick="onclick" href="htmlpage/rev.html">Rev</a>
+            </li>
+
+        </ul>
+    </div>
+
+
+    <!--网页底部-->
+    <footer class="page_foot">
+        <a href="mailto:dazhilang@outlook.com">Contacts me</a>
+    </footer>
+
+</body>
+</html> 
